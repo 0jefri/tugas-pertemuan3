@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="nav">
+      <button id="btn-input">Input Data</button>
+      <button id="btn-list">List Data</button>
+  </div>
+  <div class="formInput">
+    <h2>Form Input</h2>
+    <form id="dataForm" action="#">
+      <div class="inputData">
+        <label for="name"><h3>Name</h3></label>
+        <input id="input-name" type="text" placeholder="Name" required>
+        <div id="btn-save">
+          <button type="submit">Save</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id="list-data" class="list-data-hidden">
+    <h1>Daftar Nama</h1>
+    <div id="show-list-data">
+      <label for="name" class="lb-not-found">Data Belum Ada.....</label>
+    </div>
+  </div>
+</body>
+<style>
+  .nav {
+    display: flex;
+    justify-content: center;
+    background-color: darkred;
+  }
+  .nav button {
+    background-color: red;
+    color: white;
+    margin: 4px;
+    padding: 4px;
+    cursor: pointer;
+  }
+  .formInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: gray;
+    padding: 10px;
+    margin: 2rem 10rem 20rem 10rem;
+    border: none;
+    border-radius: 10px;
+  }
+  .formInput h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .inputData {
+    display: flex;
+    flex-direction: column;
+  }
+  .inputData input{
+    padding: 5px;
+  }
+  #btn-save {
+    display: block;
+    text-align: center;
+    background-color: darkred;
+    margin-top: 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  #btn-save button {
+    background-color: darkred;
+    color: wheat;
+    border: none;
+
+  }
+</style>
+</html>

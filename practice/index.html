@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="layout">
+    <h1 id="message">Tambah Item ke Daftar</h1>
+    <input type="text" id="itemInput" placeholder="Masukkan item...">
+    <button id="btn">Add</button>
+
+    <ul id="itemList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 20px;
+  background-color: lightblue;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+#btn {
+  background-color: aqua;
+  padding: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#itemInput {
+  margin: 5px;
+  padding: 5px;
+}
+
+.deleteButton {
+            margin-left: 10px;
+            background-color: red; 
+            color: white; 
+            border: none; 
+            padding: 5px 10px; 
+            cursor: pointer;
+        }
+        #itemList {
+            margin-top: 20px;
+        }
+        li {
+            margin: 5px 0;
+            display: flex;
+            align-items: center; /* Agar teks dan tombol berada dalam satu baris */
+        }
+</style>
+</html>
